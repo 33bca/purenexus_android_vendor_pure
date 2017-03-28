@@ -22,8 +22,10 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
  
+ifeq ($(WITH_GAPPS),true) 
 # Inherit arm64 phone gapps 
 $(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk) 
+endif 
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := gemini
