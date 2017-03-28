@@ -24,7 +24,13 @@ $(call inherit-product, device/xiaomi/gemini/device.mk)
  
 ifeq ($(WITH_GAPPS),true) 
 # Inherit arm64 phone gapps 
-$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk) 
+$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
+else
+# Misc packages
+PRODUCT_PACKAGES += \
+    DeskClock \
+    messaging \
+    SoundRecorder
 endif 
 
 # Device identifier. This must come after all inclusions.
