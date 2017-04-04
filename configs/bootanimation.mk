@@ -41,8 +41,10 @@ ifneq ($(filter condor,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
 endif
-
-# Add Stock Lollipop bootanimation based on device
+ifneq ($(filter lux,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter gemini,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip

@@ -5,4 +5,5 @@ add_lunch_combo surnia-userdebug
 add_lunch_combo A6020-userdebug
 add_lunch_combo victara-userdebug
 add_lunch_combo condor-userdebug
+add_lunch_combo lux-userdebug
 add_lunch_combo gemini-userdebug
