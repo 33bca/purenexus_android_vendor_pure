@@ -16,6 +16,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+WITH_GOOGLE_CAMERA := false
+WITH_CM_CHARGER := true
+
 # Include pure telephony configuration
 include vendor/pure/configs/pure_phone.mk
 
