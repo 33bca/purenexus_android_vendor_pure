@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
-ifneq ($(filter addison athene hydrogen kenzo kipper lux oneplus3 onyx potter s2 victara,$(TARGET_PRODUCT)),)
+ifneq ($(filter addison athene hydrogen kenzo kipper lux oneplus3 onyx potter s2 victara gemini,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
